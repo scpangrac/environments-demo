@@ -1,9 +1,127 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <header class="navigation">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="Images/sw_logo.png" class="swlogo">
+                </div>
+                <div class="name">Sarah Wilson</div>
+            </div>
+            <nav class="nav-right">
+                <ul class="nav">
+                    <li class="inline-block">About Me</li>
+                    <li class="inline-block">My Skills</li>
+                    <li class="inline-block">My Projects</li>
+                    <li class="inline-block">Let's Connect</li>
+                </ul>
+            </nav>
+        </header> 
+        <section class="heroImg">
+            <div class="content">
+                <h1>Hello, and Welcome!</h1>
+                <br></br>
+                <h2>I’m Sarah Wilson, a UX/UI designer and Coffee Enthusiast<sup>TM</sup></h2>
+                <h3>Let’s Connect! Ask me anything, coffee questions included</h3>
+                <button class="connect">Connect</button>
+            </div>
+            <div class="swimg">
+                <img src="Images/Sarah_Wilson.jpg" class="swimg">
+            </div> 
+        </section>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-<p>Test Text</p>
-</body>
+<!-- The Modal -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>I'd love to hear from you!</h1>
+                <h2>Leave your name, company, a message, and your email address so I can get back to you!</h2>
+                <form action="/action_page.php">
+                    <label for="name">Your name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="company">Company:</label><br>
+                    <input type="text" id="company" name="company"><br>
+                    <label for="email">Email Address:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <input type="text" id="message" name="message"><br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
+
+        </div>
+        <section class="AboutMe">
+            <div class="AboutImg">
+                <img src="Images/Latte_Art.jpg" class="LatteArt">
+            </div>
+            <div class="AboutMeContent">
+                <h1>About Me</h1>
+                <p>I specialize in UI design, and enjoy any chance I get to flex my creative muscles. I can make a mean cup of coffee, and my lattes always feature some animal art on top. I love working on some graphic design projects for friends and family; gifts from me are often goofy cartoons printed on stickers or t-shirts.</p>
+                <button class="LearnMore">Learn More</button>
+            </div>
+        </section>
+        <section class="MySkills">
+            <div class="MySkillsContent">
+                <h1>My Skills</h1>
+                <p>My skills include working with Figma, being self-motivated, and working well in a team, often in a leadership position. I’m quick to pick up new programs, and love to learn new skills.</p>
+                <button class="LearnMore">Learn More</button>
+            </div>
+            <div class="MySkillsImg">
+                <img src="Images/Figma.png" class="Figma">
+            </div>
+        </section>
+        <section class="MyProjects">
+            <div class="Header">
+                <h1>My Projects</h1>
+                <p>Check out what I'm proud of</p>
+            </div>
+            <div class="Beverado">
+                <img src="Images/sw_logo.png">
+                <h3>Beverado</h3>
+                <p>Ordering app for indecisive beverage drinkers</p>
+            </div>
+            <div class="ED">
+                <img src="Images/sw_logo.png">
+                <h3>ED Redesign</h3>
+                <p>Helping ED reach its full potential</p>
+            </div>
+            <div class="SAFE">
+                <img src="Images/sw_logo.png">
+                <h3>SAFE Redesign</h3>
+                <p>Making SAFE safer and easier to use</p>
+            </div>
+        
+
+
+        </section>
+        <footer>
+           <div class="button">
+                <button class="back_to_top"><span class="material-icons">keyboard_arrow_up</span>Back To Top</button>
+            </div>
+            <div class="footer-content">
+                <p>Questions? Coffee Advice? Let's Connect!</p>
+            </div>
+            <ul class="social">
+                <button>Email</button>
+                <button>Instagram</button>
+                <button>LinkedIn</button>
+            </ul>
+            <img src= "Images/sw_logo.png" class="swlogofoot">
+        </footer>
+
+    </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="JS/index.js"></script>
 </html>
